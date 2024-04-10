@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lange="en">
+
+<head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" comtent="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        Add Quiz
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="p-5 bg-white shadow md:flex items-center justify-between w-full ">
+        <div>
+            <h1 class="text-3xl font-bold text-purple-900 cursor-pointer pl-8"><span
+                    class="text-orange-800">Q</span>UIZ<span class="text-orange-800"> ?</span></h1>
+        </div>
+
+        <ul class="flex items-center font-medium">
+            <li class="mx-4 my-6 md:my-0 ">
+                <a href="Quiz.html" class="text-xl hover:text-purple-800 duration-500">Add Quiz</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="Quiz List.html" class="text-xl hover:text-purple-800 duration-500">Quiz List</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="Creat Quiz.html" class="text-xl hover:text-purple-800 duration-500">Creat Quiz</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="Schedule Quiz.html" class="text-xl hover:text-purple-800 duration-500">Schedule Quiz</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="Start Quiz.html" class="text-xl hover:text-purple-800 duration-500">Start Quiz</a>
+            </li>
+        </ul>
+        <button
+            class="bg-purple-800 text-white font-[poppins] duration-500 px-6 py-2 mx-4 hover:bg-purple-950 rounded  focus:ring-4 focus:ring-gray-300">
+            Get Started&nbsp;<i class="fa-solid fa-arrow-right"></i>
+        </button>
+    </nav>
+
+    <main class="bg-gradient-to-t from-purple-400 via-purple-300 to-purple-50 md:h-[900px] ">
+        <div class="">
+            <span class="text-3xl flex justify-center pt-5 hover:text-orange-800 ">
+                ADD QUESTIONS
+            </span>
+            <div class="md:flex justify-center bg-white md:p-6 md:mx-60 md:mt-2 md:mb-56">
+                <div>
+                    <div class="p-8">
+                        <input
+                            class="p-8 md:m-2 md:mb-[1px] md:w-96 rounded-md shadow border-gray-500 border-2 bg-purple-200 text-purple-700 hover:text-white hover:bg-purple-300 hover:placeholder:text-white h-14 placeholder:text-purple-700 font-medium text-xl"
+                            type="text" placeholder="Write Subject Of Quiz..." />
+                    </div>
+                    <div class=" p-8">
+                        <input
+                            class="md:m-3 md:mt-1 p-7 md:w-96 md:h-56 rounded-md shadow  border-gray-500 border-2 bg-purple-200 text-purple-700 hover:text-white hover:bg-purple-300 hover:placeholder:text-white placeholder:text-purple-700 font-medium text-xl "
+                            type="text" placeholder="Write Question Here...?" />
+                    </div>
+
+                </div>
+                <div>
+                    <ul>
+                        <li class="m-6 p-4 "><input
+                                class="p-2.5 rounded-md bg-orange-300 shadow text-white hover:text-purple-900 hover:bg-white hover:placeholder:text-purple-900  placeholder:text-white font-medium"
+                                type="text" placeholder="Write Option 1 Here.." /></li>
+                        <li class="m-6 p-4"><input
+                                class="p-2.5 rounded-md  bg-orange-300 shadow text-white hover:text-purple-900 hover:bg-white hover:placeholder:text-purple-900  placeholder:text-white font-medium "
+                                type="text" placeholder="Write Option 2 Here.." /></li>
+                        <li class="m-6 p-4"><input
+                                class="p-2.5 rounded-md  bg-orange-300 shadow text-white hover:text-purple-900 hover:bg-white hover:placeholder:text-purple-900  placeholder:text-white font-medium"
+                                type="text" placeholder="Write Option 3 Here.." /></li>
+                        <li class="m-6 p-4"><input
+                                class="p-2.5 rounded-md  bg-orange-300 shadow text-white hover:text-purple-900 hover:bg-white hover:placeholder:text-purple-900  placeholder:text-white font-medium"
+                                type="text" placeholder="Write Option 4 Here.." /></li>
+                        <li class="m-3 p-4"><input
+                                class="p-4 rounded-md  bg-white shadow text-purple-950 hover:text-white hover:bg-purple-950 hover:placeholder:text-white focus-ring-4 focus:ring-gray-400 placeholder:text-purple-700 font-medium"
+                                type="text" placeholder="Answer Here.." /></li>
+                    </ul>
+                    <div class="ml-3">
+                        <button
+                            class=" m-6 bg-purple-900 md:ml-20 text-white font-[poppins] duration-500 px-6 py-2 mx-4 hover:bg-purple-950 rounded  focus:ring-4 focus:ring-gray-300">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <img class="md:mt-[310px] pr-8 pl-1 h-64 w-64 opacity-70"
+                    src="https://i.vippng.com/png/small/177-1775206_predictive-modeling-for-basic-scoring-and-classification-png.png" />
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

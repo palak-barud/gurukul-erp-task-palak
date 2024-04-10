@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lange="en">
+
+<head>
+    <meta charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" comtent="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+        Gurukul Erp
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="flex bg-white fixed w-full">
+        <div class="flex">
+            <div>
+                <img class="h-11 w-11 rounded-full my-2 mx-1 p-1"
+                    src="https://www.ggf.org.uk/wp-content/uploads/2018/11/gkstrategy-logo-2016-orange-on-grey.jpg" />
+            </div>
+            <h1 class="text-black text-3xl font-extrabold my-3 mx-1 p-0"><span class="text-orange-700">G</span>urukul
+                <span class="text-orange-700">E</span>rp
+            </h1>
+        </div>
+
+        <div class="text-black text-xl  hover:text-purple-900 hover:scale-125 ml-32 mt-5"> <i
+                class="fa-solid fa-bars"></i>
+        </div>
+
+        <input class="h-8 w-6/12 rounded-2xl m-3 mt-5 px-3 py-2 bg-slate-100 hover:bg-gray-200" type="search"
+            placeholder="&nbsp;&nbsp;Q search here..." />
+
+        <div
+            class="text-black flex border-white rounded-full text-2xl m-2 p-2 mt-5 hover:text-purple-900 hover:scale-125 ">
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <div class="flex  hover:text-purple-900 ml-20 mt-2.5">
+            <div class="rounded-full h-10 w-10 my-3 mx-0 hover:scale-105">
+                <img src="https://cdn1.iconfinder.com/data/icons/avatars-1-5/136/61-512.png" />
+            </div>
+            <form action="">
+                <p class="text-black text-xl font-bold text-center my-3 mx-0.5 flex items-center hover:scale-105 ">My
+                    Profile</p>
+                <select class="w-36 hover:text-blue-600 hover:bg-slate-200" name="account">
+                    <optgroup label="Account">
+                        <option>Account details</option>
+                        <option>Manage your google aacount</option>
+                        <option><i class="fa-solid fa-user"></i>Add another account</option>
+                        <option>Manage account on this device</option>
+                        <option><i class="fa-solid fa-question"></i>Help</option>
+                        <option>Privacy Policy</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+    </header>
+    <div class="flex">
+        <nav class="w-60 h-[650px] bg-white overflow-y-auto fixed mt-14">
+            <div
+                class=" text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48 h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-house"></i></div>&nbsp;&nbsp;
+                <a class="active:bg-purple-950" href="index.html">Dashboard</a>
+            </div>
+            <div
+                class="text-black text-xl  m-3 p-4  hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-address-card"></i></div>&nbsp;&nbsp;
+                <h3>Admissions</h3>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-children"></i></div>&nbsp;&nbsp;
+                <h3>Students</h3>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-sack-dollar"></i></div>&nbsp;
+                <h3>Fee & Payment</h3>
+            </div>
+            <div
+                class="text-black text-xl  m-3 p-4  hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-clock"></i></div>&nbsp;&nbsp;
+                <h3>Time table</h3>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-circle-question"></i></div>&nbsp;&nbsp;
+                <a href="quiz.html">Quiz</a>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48 h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-square-poll-vertical"></i></div>&nbsp;&nbsp;
+                <h3>Results</h3>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"><i class="fa-solid fa-building-user"></i></div>&nbsp;&nbsp;
+                <h3>Departments</h3>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"> <i class="fa-solid fa-bell"></i></div>&nbsp;&nbsp;
+                <h3>Notifications</h3>
+            </div>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"><i class="fa-solid fa-gear"></i></div>&nbsp;&nbsp;
+                <h3>Settings</h3>
+            </div>
+            <hr>
+            <div
+                class="text-black text-xl m-3 p-4 hover:bg-orange-700 hover:w-48  h-12 flex items-center rounded-2xl hover:text-white">
+                <div class="text-xl"><i class="fa-solid fa-right-from-bracket"></i></div>&nbsp;&nbsp;
+                <h3>Logout</h3>
+            </div>
+            <hr>
+        </nav>
+        <main class="bg-purple-100 sm:w-7/12 md:w-11/12 h-full p-4 ml-64 mt-[85px] static">
+            <div class="flex items-center font-semibold ">
+                <div class="text-xl"><i class="fa-solid fa-gauge-simple-high"></i></div>&nbsp;&nbsp;
+                <h2 class="text-xl font-bold">Dashboard</h2>
+            </div>
+            <div class="flex justify-around">
+
+                <div
+                    class="bg-purple-900 h-36 m-10 rounded-2xl hover:scale-105 hover:bg-purple-950 shadow-md shadow-gray-400 ">
+                    <div class=" flex justify-around items-center m-5">
+                        <div class="h-10 w-10 rounded-full bg-white border-black p-2">
+                            <img
+                                src="https://thumbs.dreamstime.com/b/learning-icon-vector-male-group-students-person-profile-avatar-mortar-board-hat-symbol-school-college-university-163944198.jpg" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <div>
+                            <hr>
+                            <h3 class="font-bold text-white">TOTAL <br>STUDENTS<br><span class="font-bold">3480</span>
+                            </h3>
+                            <hr>
+                        </div>
+
+                    </div>
+
+                    <div class="text-white m-3.5  py-0">80% increase in 20 days</div>
+                </div>
+                <div
+                    class="bg-purple-900 h-36 m-11 rounded-2xl hover:scale-105 hover:bg-purple-950 shadow-md shadow-gray-400 ">
+                    <div class=" flex justify-around items-center m-5">
+                        <div class="h-10 w-10 rounded-full bg-white border-black p-2"><img
+                                src="https://cdn4.iconfinder.com/data/icons/student-ui/1172/student_add-1024.png" />
+                        </div>
+                        <div>
+                            <hr>
+                            <h3 class="font-bold text-white">NEW <br> STUDENTS<br><span class="font-bold">276</span>
+                            </h3>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="text-white m-3.5 px-0.5 py-0">50% increase in 25 days</div>
+                </div>
+                <div
+                    class="bg-purple-900 h-36  m-11 rounded-2xl hover:scale-105 hover:bg-purple-950 shadow-md shadow-gray-400">
+                    <div class=" flex justify-around items-center m-5">
+                        <div class="h-10 w-10 rounded-full bg-white border-black p-2"><img
+                                src="https://th.bing.com/th/id/OIP.SsAnYMuae17WUeeVD-ewrgHaHa?rs=1&pid=ImgDetMain" />
+                        </div>
+
+                        <div>
+                            <hr>
+                            <h3 class="font-bold text-white">TOTAL <br>COURSES<br><span class="font-bold">28</span>
+                            </h3>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="text-white m-3.5 px-0.5 py-0">76% increase in 20 days</div>
+                </div>
+                <div
+                    class="bg-purple-900 h-36 m-11 rounded-2xl hover:scale-105 hover:bg-purple-950 shadow-md shadow-gray-400">
+                    <div class=" flex justify-around items-center m-5">
+                        <div class="h-10 w-10 rounded-full bg-white border-black p-2"><img
+                                src="https://th.bing.com/th/id/R.4c632f64eac1b47b94d225009f5f141a?rik=1GEx6OM%2bNkZsWg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_196568.png&ehk=8phc8UMeGqXngfryXQYV1Cmv%2bEHLq%2fvCfQk2E6s8Ks0%3d&risl=&pid=ImgRaw&r=0" />
+                        </div>
+                        &nbsp;&nbsp;
+                        <div>
+                            <hr>
+                            <h3 class="font-bold text-white">FEES <BR>COLLECTION<br><span class="font-bold">25169
+                                    rs</span>
+                            </h3>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="text-white m-3.5 px-0.5 py-0">30% increase in 30 days</div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold text-orange-700">
+                    Gurukul Software</h2>
+                <hr>
+                <h3 class="text-sm font-medium  divide-red-950">Digitalizing Education Management</h3><br>
+                <p class="text-lg">Gurukul Soft Company is a product based software company and focusing on educational
+                    domain software research since 2013 onward.</p><br>
+            </div>
+            <div class="flex justify-around">
+                <div class="flex flex-col  gap-6 p-4 box-border border-solid divide-x-2 w-[580px] hover:bg-gray-200">
+                    <h2 class="font-bold text-xl">No. of student in each Departments</h2>
+                    <div>
+
+                        <div class="flex">
+                            <span class="text-sm font-bold"> Dept.Computer science :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-12">
+                                <div class="bg-orange-700 h-full rounded-sm" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div class="flex">
+                            <span class="text-sm font-bold">Department Data science :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-9">
+                                <div class="bg-orange-700 h-full rounded-sm " style="width: 60% "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">Department of Information :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-5">
+                                <div class="bg-orange-700 h-full rounded-sm" style="width: 45%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class=" flex">
+                            <span class="text-sm font-bold">Department of Management:</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-4">
+                                <div class="bg-orange-700 h-full rounded-sm" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">Department of MBA:</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-[70px]">
+                                <div class="bg-orange-700 h-full rounded-sm" style="width: 77%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">Department of civil engg:</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-9">
+                                <div class="bg-orange-700 h-full rounded-sm" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-col gap-6 p-4 box-border border-solid divide-x-2 w-[580px] hover:bg-gray-200">
+                    <h2 class="font-bold text-xl">No. of student in individual school/college</h2>
+                    <div>
+
+                        <div class="flex">
+                            <span class="text-sm font-bold">Zoom Enterprises Limited :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-12">
+                                <div class="bg-purple-800 h-full rounded-sm" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                        <div class="flex">
+                            <span class="text-sm font-bold">School of computation science :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-4">
+                                <div class="bg-purple-800 h-full rounded-sm " style="width: 70% "></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">School of biological science :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-9">
+                                <div class="bg-purple-800 h-full rounded-sm" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">school of natural and applied :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-6">
+                                <div class="bg-purple-800 h-full rounded-sm" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">Management and technology :</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-6">
+                                <div class="bg-purple-800 h-full rounded-sm" style="width: 35%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <span class="text-sm font-bold">School of engineering science:</span>
+                            <div class="w-7/12 bg-gray-300 rounded-sm h-8 ml-6">
+                                <div class="bg-purple-800 h-full rounded-sm" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex justify-around m-3">
+                <div class=" sm:h-full sm:w-full md:h-[420px] md:w-4/12 mt-5 rounded-2xl"><img
+                        src="https://www.srms.ac.in/cet/wp-content/uploads/2020/02/SRMS-Gurukul-ERP.jpg" /></div><br>
+                <div class="sm:w-full md:w-8/12 p-4">
+
+                    <p><span class="text-orange-500 font-bold">Online Quiz Interface</span><br>
+                        Weekly online quizzes are conducted through this interface by providing 10 MCQs on each subject
+                        of the university curriculum so as to ensure that the conceptual knowledge is being transferred
+                        to the students in all the subjects.<br>
+                        <span class="text-yellow-500 font-bold">Blow Ups Interface</span><br>
+                        This interface enables the students to refer to the Blow Ups (Lesson Plans) of the various
+                        subjects being taught to them during a particular semester as per the university curriculum.<br>
+                        <span class="text-amber-500 font-bold">Tutorials Interface</span><br>
+                        This interface enables the students to access and download the Tutorial Sheets for the
+                        particular subjects.<br>
+                        <span class="text-green-500 font-bold">Attendance Interface</span><br>
+                        This module is integrated with Biometric Attendance Devices installed in the Classes and Labs
+                        and assists in recording the attendance of the students in accordance to the Time Table enforced
+                        at a particular time. <br>
+                        <span class="text-blue-500 font-bold">Fee Interface</span><br>
+                        This interface enables the students to access their fee related information like Fee Dues, Next
+                        Installment Due Date etc. at any point of time.
+                    </p>
+                    
+                    <div class="mt-5 flex items-center justify-center gap-x-6 mr-8">
+                        <div class=" sm:block -space-x-2">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://miro.medium.com/v2/resize:fit:1400/1*CeSDcAsx5U4m38NEZAbzyw.jpeg" alt="">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://miro.medium.com/v2/resize:fit:1400/1*ZPcK1ECiSLURPJ3ACpu1lw.jpeg" alt="">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://dcblog.b-cdn.net/wp-content/uploads/2021/04/Dr.-A.P.J.-Abdul-Kalam.jpg" alt="">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://miro.medium.com/v2/resize:fit:1400/1*ZmgWY8ULauduluWtSJRxLg.jpeg" alt="">
+                            <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://media.licdn.com/dms/image/D4D22AQEV3fOADVdB4g/feedshare-shrink_800/0/1693580498112?e=2147483647&v=beta&t=vPCsaMPQd5bkhYJwIpLExzIGpRZwNIm9bTsEDgKEZjg" alt="">
+                        </div>
+                        <div class="boder-none sm:border-l-2 border-black sm:pl-8">
+                            <div class="flex justify-center sm:justify-start">
+                                <h3 class="text-2xl font-semibold mr-2">4.6</h3>
+                    
+                                <img class="w-5" src="https://www.svgrepo.com/show/513354/star.svg" alt="stars-icon">
+                            </div>
+                            <div>
+                                <h3 class="text-sm">Rated by 25k on google.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-around">
+                <div
+                    class="bg-white m-2 p-4 text-2xl font-bold h-full rounded-2xl shadow-lg shadow-gray-400 sm:w-5/12 md:w-3/12">
+
+                    <h2 class="p-3.5 ">Professors List</h2>
+                    <hr>
+
+                    <div class="divide-gray-600 space-y-3.5">
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12.5pt] py-2 px-1">Mr.vijay mandle [B.tech]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">computer science dept.</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12.5pt] "> Mr.Ashish paliwal [B.tech]<br>
+                                <span class="text-orange-700 text-[11pt] py-0"> civil department</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12.5pt] px-0 py-1"> Mr. Y . P . Ladhe [B.tech]<br>
+                                <span class="text-orange-700 text-[10pt] py-0">mechanical department</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12pt] py-0 px-1">Mr. Amit Kanugo [B.tech]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">electronics department</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12.5pt] py-0 px-1"> Ms.Ashwini kashyap[MBA]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">master of business admin..</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12.5pt] py-0 px-1">Mrs.Rachita vyas [MCA]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">master of computer application</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12pt] py-0 px-1">Mr.Santosh Sharma [Office]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">office department</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12pt] py-0 px-1">Mrs.Shradha Paliwal[B.tech]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">data science engg.</span>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="flex justify-around">
+                            <div class="text-3xl py-3.5"><i class="fa-solid fa-circle-user"></i></div>
+                            <div class="text-[12pt] py-0 px-1">Mr.Pradeep Mishra[B.tech]<br>
+                                <span class="text-orange-700 text-[11pt] py-0">english department</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div
+                    class="bg-white m-2 p-4 text-2xl font-bold h-full rounded-2xl shadow-lg shadow-gray-400 sm:w-full md:w-9/12">
+                    <h2 class="p-3.5">Student List / Toppers</h2>
+                    <hr>
+                    <div class="flex justify-around font-semibold text-[12pt] ">
+                        <div class="p-3 divide-gray-900">
+                            <span
+                                class="font-bold text-[16pt] p-2 bg-gradient-to-r from-orange-600 via-purple-800[40%] to-purple-900 text-transparent bg-clip-text">Student
+                                Name</span><br>
+                            <hr>
+                            <ol class="divide-gray-400">
+                                <li class="p-3">Aaditya Bhavsar</li>
+                                <hr>
+                                <li class="p-3">Aarav malviya</li>
+                                <hr>
+                                <li class="p-3">Chitransh Patel</li>
+                                <hr>
+                                <li class="p-3">Ishika Rajput</li>
+                                <hr>
+                                <li class="p-3">khushi Verma</li>
+                                <hr>
+                                <li class="p-3">Manvi solanki</li>
+                                <hr>
+                                <li class="p-3">Neha Mishra</li>
+                                <hr>
+                                <li class="p-3">Nayan Yadav</li>
+                                <hr>
+                                <li class="p-3">Priyanshi salve</li>
+                                <hr>
+                                <li class="p-3">Rohan upadhayay</li>
+                                <hr>
+                                <li class="p-3">Shivi Prajapati</li>
+                                <hr>
+                                <li class="p-3">Vinayak chouhan</li>
+                                <hr>
+                                <li class="p-3">Vidhi Mehta</li>
+                                <hr>
+                                <li class="p-3">Yasraj Singh</li>
+                                <hr>
+                                <li class="p-3">Zaid Khan</li>
+                                <hr>
+                            </ol>
+                        </div>
+                        <div class="p-3 divide-gray-900">
+                            <span
+                                class="font-bold text-[16pt] p-2 bg-gradient-to-r from-orange-600 via-purple-800[40%] to-purple-900 text-transparent bg-clip-text">Branch
+                                / courses</span>
+                            <br>
+                            <hr>
+                            <ol class="divide-gray-400">
+                                <li class="p-3">Computer science Engg.</li>
+                                <hr>
+                                <li class="p-3">Computer science Engg.</li>
+                                <hr>
+                                <li class="p-3">Computer science Engg.</li>
+                                <hr>
+                                <li class="p-3">M.C.A.</li>
+                                <hr>
+                                <li class="p-3">M.C.A.</li>
+                                <hr>
+                                <li class="p-3">Data Science Engg.</li>
+                                <hr>
+                                <li class="p-3">M.B.A.</li>
+                                <hr>
+                                <li class="p-3">Civil Engg.</li>
+                                <hr>
+                                <li class="p-3">Civil Engg.</li>
+                                <hr>
+                                <li class="p-3">Mechanical Engg.</li>
+                                <hr>
+                                <li class="p-3">Electronics Engg.</li>
+                                <hr>
+                                <li class="p-3">M.B.A.</li>
+                                <hr>
+                                <li class="p-3">Data Science Engg.</li>
+                                <hr>
+                                <li class="p-3">Computer science Engg.</li>
+                                <hr>
+                                <li class="p-3">Computer science Engg.</li>
+                                <hr>
+                            </ol>
+                        </div>
+                        <div class="p-3 divide-gray-900">
+                            <span
+                                class="font-bold text-[16pt] p-2 bg-gradient-to-r from-orange-600 via-purple-800[40%] to-purple-900 text-transparent bg-clip-text">Admission
+                                Year</span>
+                            <br>
+                            <hr>
+                            <ol class="divide-gray-400">
+                                <li class="p-3">2021</li>
+                                <hr>
+                                <li class="p-3">2024</li>
+                                <hr>
+                                <li class="p-3">2023</li>
+                                <hr>
+                                <li class="p-3">2021</li>
+                                <hr>
+                                <li class="p-3">2021</li>
+                                <hr>
+                                <li class="p-3">2023</li>
+                                <hr>
+                                <li class="p-3">2022</li>
+                                <hr>
+                                <li class="p-3">2023</li>
+                                <hr>
+                                <li class="p-3">2023</li>
+                                <hr>
+                                <li class="p-3">2022</li>
+                                <hr>
+                                <li class="p-3">2024</li>
+                                <hr>
+                                <li class="p-3">2021</li>
+                                <hr>
+                                <li class="p-3">2022</li>
+                                <hr>
+                                <li class="p-3">2023</li>
+                                <hr>
+                                <li class="p-3">2021</li>
+                                <hr>
+                            </ol>
+                        </div>
+                        <div class="p-3 divide-gray-900">
+                            <span
+                                class="font-bold text-[16pt] p-2 bg-gradient-to-r from-orange-600 via-purple-800[40%] to-purple-900 text-transparent bg-clip-text">Enrollment
+                                no.</span>
+                            <br>
+                            <hr>
+                            <ol class="divide-gray-400">
+                                <li class="p-3">0823CS211003</li>
+                                <hr>
+                                <li class="p-3">0823CS241007</li>
+                                <hr>
+                                <li class="p-3">0823CS231015</li>
+                                <hr>
+                                <li class="p-3">0823MCA2138</li>
+                                <hr>
+                                <li class="p-3">0823MCA2147</li>
+                                <hr>
+                                <li class="p-3">0823DS231024</li>
+                                <hr>
+                                <li class="p-3">0823MBA2138</li>
+                                <hr>
+                                <li class="p-3">0823CE231002</li>
+                                <hr>
+                                <li class="p-3">0823CE231017</li>
+                                <hr>
+                                <li class="p-3">0823ME221021</li>
+                                <hr>
+                                <li class="p-3">0823EE241007</li>
+                                <hr>
+                                <li class="p-3">0823MBA2187</li>
+                                <hr>
+                                <li class="p-3">0823DS231011</li>
+                                <hr>
+                                <li class="p-3">0823CS231095</li>
+                                <hr>
+                                <li class="p-3">0823CS211097</li>
+                                <hr>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+
+
+</body>
+
+</html>
